@@ -1,6 +1,10 @@
 <h2 class="section-title"><%= @labels['about'] %></h2>
-<p itemprop="description">So you want to organize a conference? That's pretty awesome! But we know that you don't have time to create the website, since you have to worry about contacting sponsors, chossing the right place, buying airplane tickets for speakers and many other things.</p>
+<p itemprop="description">
+O Sampa.js foi o primeiro evento focado em Javascript de São Paulo e essa será a 3ª edição.
 
-<p>That's why we created this project! <a href="https://github.com/braziljs/conf-boilerplate">Conf Boilerplate</a> is an iniciative of <a href="http://braziljs.org">BrazilJS Foundation</a> that provides a simple structure built on top of Docpad, a static generator in NodeJS, with all the things you need to create a event. We also provide a responsive template with i18n!</p>
+Essa será a primeira edição paga para conseguir prover uma qualidade maior do evento e também contribuir com as ações sociais da PUC, nessa edição 20% do que arrecadarmos será revertido para ações sociais gerenciadas pela PUC.
 
-<p>This is just a live demo, check our <a href="https://github.com/braziljs/conf-boilerplate">repository on Github</a> for more details =D</p>
+A grade será votada pela comunidade a partir do novo sistema de call4papers do bonoevento para que apenas os participantes que comprarem ingresso possam votar.
+
+Os 100 primeiros ingressos, que podem votar, serão a R$50. Depois sobem para R$80.
+</p>
