@@ -48,6 +48,10 @@ module.exports =
 
     # The entire schedule
     schedule: [
+        { 
+            name: 'Credenciamento', 
+            time: '08:30' 
+        },
         { name: 'Miller Medeiros' },
         { name: 'Luciano Ramalho' },
         { name: 'Ciro Nunes' },
