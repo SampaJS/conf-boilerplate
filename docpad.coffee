@@ -59,6 +59,4 @@ module.exports =
     sponsors: []
 
     # List of Partners
-    partners: [
-        { logo: 'img/logo-brasil-js.jpg' }
-    ]
+    partners: []

@@ -1,47 +1,23 @@
-<!-- PALESTRAS -->
-<section class="palestras" id="palestras">
-    <div class="conteudo">
-        <header>
-            <h2> <strong>Palestras</strong> <br /> Confira a  programação do evento </h2>
-            <p> Grade sujeita a alteração. </p>
-        </header>
+<h2 class="section-title"><%= @labels['speakers'] %></h2>
 
-        <% for speaker in @schedule: %>
-            <% if speaker.presentation: %>
-                <section
-                    class="palestrante"
-                    itemprop="performer"
-                    itemscope
-                    itemtype="http://schema.org/Person"
-                >
-                    <% if speaker.photo: %>
-                        <figure>
-                            <img
-                                src="<%= speaker.photo %>"
-                                alt="<%= speaker.name %>"
-                            />
-                        </figure>
-                    <% end %>
+<ul class="speakers-list">
+<% for speaker in @schedule: %>
+  <% if speaker.presentation: %>
+    <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+      <% if speaker.photo: %>
+        <span class="speaker-photo"><img class="photo" src="<%= speaker.photo %>" alt="<%= speaker.name %>" itemprop="image" /></span>
+      <% end %>
 
-                    <div class="palestrante-info">
-                        <% if speaker.presentation.time: %>
-                            <header>
-                                <p class="horario"> <%= speaker.presentation.time %> </p>
-                                <h3> <%= speaker.presentation.title %> </h3>
-                                <p class="palestrante-nome">
-                                    <%= speaker.name %>
-                                    @<a href="http://www.twitter.com/<%= speaker.twitter %>">
-                                </p>
-                            </header>
-                        <% end %>
-
-                        <p class="palestrante-descricao">
-                            <%= speaker.bio %>
-                        </p>
-                    </div>
-                    <div class="clearfix"></div>
-                </section>
-            <% end %>
+      <h3 class="speech-title">
+        <% if speaker.presentation.time: %>
+          <span class="speech-time"><%= speaker.presentation.time %></span>
         <% end %>
-    </div>
-</section>
+          <span> <%= speaker.presentation.title %></span>
+      </h3>
+
+      <h3 class="speakers-name"><%= speaker.name %> <a href="http://www.twitter.com/<%= speaker.twitter %>" title="Twitter @<%= speaker.twitter %>">@<%= speaker.twitter %></a></h3>
+      <p class="speakers-bio"><%= speaker.bio %></p>
+    </li>
+  <% end %>
+<% end %>
+</ul>

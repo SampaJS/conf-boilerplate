@@ -1,21 +1,9 @@
-<!-- LOCAL -->
-<section class="local" id="local">
-    <div class="conteudo">
-        <header>
-            <h2> <strong>Local</strong> <br /> Veja como é fácil chegar no evento </h2>
-        </header>
-        <address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-          <span ><%= @conf.venue %>. </span>
-          <br />
-          <span itemprop="streetAddress"><%= @conf.address %>. </span>
-          <span itemprop="addressLocality"><%= @conf.city %></span>,
-          <span itemprop="addressRegion"> <%= @conf.state %></span>
-        </address>
-        <img src="img/teste.jpg" alt="" />
-        <p class="info-adicional">
-            Horario: 9h as 18:00 <br />
-            Dúvidas: <a href="mailto:contato@sampajs.com.br" title="contato@sampajs.com.br"> contato@sampajs.com.br </a>
-        </p>
-    </div>
-    <div class="clearfix"></div>
-</section>
+<h2 class="section-title"><%= @labels['location'] %></h2>
+
+<p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+  <span itemprop="streetAddress"><%= @conf.address %>. </span>
+  <span itemprop="addressLocality"><%= @conf.city %></span>,
+  <span itemprop="addressRegion"> <%= @conf.state %></span>
+</p>
+
+<div id="map-canvas" class="location-area" data-address="<%= @conf.address %>"></div>
