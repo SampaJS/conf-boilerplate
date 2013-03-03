@@ -1,3 +1,353 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    font: 17px Lato, Arial, Helvetica, sans-serif;
+    background: url(../img/bg-rodape.jpg) no-repeat center bottom fixed;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.conteudo {
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+strong {
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 45px;
+    color: #F8C700 !important;
+    line-height: 50px;
+}
+
+.bg-topo {
+    position: absolute;
+    width: 100%;
+    height: 699px;
+    background: url(../img/bg-topo.jpg) no-repeat center top fixed;
+    z-index: -10;
+}
+
+
+
+/************** 
+     TOPO
+**************/
+.topo {
+    margin: 0 auto 55px;
+    padding-top: 25px;
+}
+
+.topo h1 {
+    float: left;
+}
+
+.topo nav {
+    float: right;
+    width: 720px;
+    height: 56px;
+    margin-top: 87px;
+    background: url(../img/bg-menu.png) no-repeat center;
+}
+
+.topo li {
+    float: left;
+    margin: 5px 0 0 0;
+}
+
+.topo li a {
+    float: left;
+    margin: 13px 26px 0;
+    padding: 0 0 0 14px;
+    background: url(../img/bullet-menu.png) no-repeat center left;
+    color: #F8C600;
+    font-weight: 900;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.topo li a:hover {
+    color: #FFDC4F;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+
+
+
+
+
+/************** 
+     CHAMADA PRINCIPAL
+**************/
+.chamada-principal {
+    height: 211px;
+    background: url(../img/bg-chamada-principal.png) no-repeat center;
+    color: #fff;
+}
+
+.data-evento {
+    float: left;
+    font-size: 60px;
+    font-weight: 900;
+    margin: 70px 0 0 70px;
+}
+
+.data-evento span {
+    color: #F8C700;
+}
+
+.valor-evento {
+    float: right;
+    margin: 50px 65px 0;
+    color: #F8C700;
+    text-align: center;
+    font-size: 28px;
+}
+
+.valor-evento a {
+    display: block;
+    width: 268px;
+    height: 58px;
+    margin-top: 10px;
+    background: url(../img/btn-inscricao-verde.png) no-repeat center top;
+    text-indent: -9999px;
+}
+
+.valor-evento a:hover {
+    background: url(../img/btn-inscricao-verde.png) no-repeat center bottom;
+}
+
+
+
+
+
+
+/************** 
+     SOBRE O EVENTO
+**************/
+.sobre {
+    margin-top: 157px;
+    background: #fff;
+    text-align: center;
+}
+
+.sobre h2 {
+    position: relative;
+    top: -94px;
+    width: 324px;
+    height: 390px;
+    margin: 0 auto;
+    padding: 87px 40px 0 40px;
+    color: #fff;
+    background: url(../img/bg-titulo-sobre.png) no-repeat center top;
+}
+
+.sobre p {
+    position: relative;
+    top: -90px;
+    font-size: 20px;
+}
+
+/************** 
+     SOBRE O EVENTO
+**************/
+.palestras {
+    position: relative;
+    padding: 100px 0;
+    background: #181914 url(../img/bg-palestras.jpg) no-repeat center top;
+    color: #fff;
+}
+
+.palestras header p {
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+/* PALESTRANTES */
+.palestrante {
+    width: 100%;
+    clear: both;
+    margin: 35px 0 0 0;
+    padding: 35px 0 0 0;
+    border-top: 1px solid #4B4B48;
+}
+
+.palestrante img {
+    float: left;
+    margin-right: 20px;
+}
+
+.palestrante-info {
+    float: left;
+    width: 765px;
+}
+
+.palestrante-info .horario {
+    width: 153px;
+    height: 36px;
+    margin: 0 0 20px 0;
+    padding: 5px 0 0 10px;
+    background: url(../img/bg-horario.png) no-repeat top left;
+    color: #000;
+    font-weight: 900;
+}
+
+.palestrante-info h3 {
+    color: #F8C700 !important;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.palestrante-info .palestrante-nome {
+    margin: 0 0 15px;
+    font-size: 20px;
+}
+
+.palestrante-info a {
+    color: #fff;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.palestrante-info a:hover {
+    color: #FFDC4F;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.palestrante-descricao {
+    clear: both;
+}
+
+
+
+
+
+
+/************** 
+     PARCEIROS
+**************/
+.parceiros {
+    position: relative;
+    padding: 100px 0;
+    background: #fff;
+}
+
+.parceiros h2 {
+    margin-bottom: 35px;
+}
+
+.patrocinadores,
+.apoio {
+    width: 45%;
+}
+
+.patrocinadores {
+    float: left;
+}
+
+.apoio {
+    float: right;
+}
+
+
+
+
+/************** 
+     LOCAL
+**************/
+.local {
+    position: relative;
+    height: 547px;
+    padding: 150px 0;
+    background: url(../img/bg-local.png) no-repeat center top;
+    color: #fff;
+    font-size: 20px;
+}
+
+.local address {
+    margin: 15px 0;
+    font-weight: 600;
+}
+
+.info-adicional {
+    margin: 15px 0;
+}
+
+.local a {
+    color: #fff;
+}
+
+.local a:hover {
+    color: #FFDC4F;
+}
+
+/************** 
+     LOCAL
+**************/
+.rodape .conteudo {
+    height: 350px;
+    text-align: center;
+}
+
+.btn-topo {
+    position: absolute;
+    width: 384px;
+    height: 90px;
+    left: 50%;
+    bottom: 0;
+    margin-left: -192px;
+}
+
+.btn-topo a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 33px;
+    margin: 0 auto;
+    padding-top: 57px;
+    background: url(../img/btn-voltar-topo.png) no-repeat center top;
+    color: #000;
+    text-decoration: none;
+}
+
+.btn-topo a:hover {
+    background: url(../img/btn-voltar-topo.png) no-repeat center bottom;
+}
+
+.creditos {
+    padding: 8px 0;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 13px;
+}
+
+.creditos a {
+    color: #fff;
+}
+ 
+
+
+
+
 /* =============================================================================
    MAIN LAYOUT
    ========================================================================== */
@@ -169,3 +519,11 @@ nav {background: #2b2b2b;}
   }
   .github-link { display: none; }
 }
+
+
+
+
+
+
+
+
