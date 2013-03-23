@@ -3,7 +3,7 @@
 
 body {
     font: 17px Lato, Arial, Helvetica, sans-serif;
-    background: url(../img/bg-rodape.jpg) no-repeat center bottom fixed;
+    background: url(../img/bg-rodape.jpg) no-repeat center top fixed;
 }
 
 .clearfix {
